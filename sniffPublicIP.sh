@@ -26,7 +26,7 @@ function helpPanel(){
  	echo -e "${yellowColour}"; for i in $(seq 1 47); do echo -n "-"; done; echo -e "${endColour}"
 	echo -e "\n${greenColour}   - Use mode:${endColour}${turquoiseColour} ./infoIpPublic.sh${endColour} ${purpleColour}-i${endColour} ${grayColour}IP${endColour}"
 	echo -e "\n${grayColour}\t Eg: ${endColour}${turquoiseColour}./infoIpPublic${endColour} ${purpleColour}-i${endColour} ${grayColour}$(echo $((RANDOM%126))).$(echo $((RANDOM%255))).$(echo $((RANDOM%255))).$(echo $((RANDOM%255)))${endColour}"
-	echo -e "\n${greenColour}   - For file extraction:${endColour}${greyColour} use ${endColour}${purpleColour}-e${endColour}"
+	echo -e "\n${greenColour}   - For file extraction:${endColour}${greyColour} add ${endColour}${purpleColour}-e${endColour}"
 	echo -e "${yellowColour}"; for i in $(seq 1 47); do echo -n "-"; done; echo -e "${endColour}"
 	tput cnorm; exit 1
 }
