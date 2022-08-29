@@ -1,5 +1,5 @@
 # sniffIpPublic
-Script written in Bash for take data from a Public-IP
+Script written in Bash, this script takes data from a Public-IP.
 
 # Author: Vikingo-07
 Contact:
