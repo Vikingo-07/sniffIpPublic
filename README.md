@@ -6,7 +6,7 @@ Contact:
 - Linkedin: www.linkedin.com/in/moriconilorenzo
 
 # Use mode
-- Clone repository ( git clone https://github.com/Vikingo-07/sniffIpPublic.git )
+- Clone repository ( git clone https://github.com/Vikingo-07/sniffPublicIP.git )
 - Go inside the folder ( cd sniffPublicIP )
 - Give it execution permissions ( chmod +x sniffPublicIP.sh )
 - Execute ( ./sniffPublicIP.sh ... )
