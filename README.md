@@ -1,7 +1,7 @@
 # sniffIpPublic
 Script written in Bash, this script takes data from a Public-IP.
 
-# Author: Vikingo-07
+# Author: Moriconi Lorenzo
 Contact:
 - Linkedin: www.linkedin.com/in/moriconilorenzo
 
