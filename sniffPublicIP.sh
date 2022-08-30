@@ -59,7 +59,7 @@ else
 		sleep 1; clear
 		echo -ne "\n${turquoiseColour}Information of IP Public${endColour}${yellowColour} $ip${endColour}:"
 		cat ut.tmp
-		echo -ne "\n${turquoiseColour}View location in Google Map:${endColour}${yellowColour} https://www.google.com/maps?q=$lat,$lon${endColour}"
+		echo -ne "\n${turquoiseColour}View location in Google Map:${endColour}${grayColour} https://www.google.com/maps?q=$lat,$lon${endColour}"
 		if [ $extract -eq 1 ]; then
 			echo -ne "\n${turquoiseColour}Extracting information${endColour}${grayColour}...${endColour}"
 			cp ut.tmp infoOutIP 2>/dev/null
