@@ -1,5 +1,7 @@
 # sniffIpPublic
 Script written in Bash, this script takes data from a Public-IP.
+- Geolocation on google maps.
+- Continent, country, region, city, zip, timezone, isp, org, indicator flag (mobile, proxy, hosting), etc.
 
 # Author: Moriconi Lorenzo
 Contact:
