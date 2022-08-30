@@ -53,15 +53,19 @@ else
 		tput cnorm; exit 1
 	else
 		echo -e "${grayColour}[${endColour}${greenColour}V${endColour}${grayColour}]${endColour}"
+		coo=$(cat ut.tmp | grep -A 1 lat | awk '{print $3}')
+                lat=$(echo $coo | awk '{print $1}')
+                lon=$(echo $coo | awk '{print $2}')
 		sleep 1; clear
 		echo -ne "\n${turquoiseColour}Information of IP Public${endColour}${yellowColour} $ip${endColour}:"
 		cat ut.tmp
+		echo -ne "\n${turquoiseColour}View location in Google Map:${endColour}${yellowColour} https://www.google.com/maps?q=$lat,$lon${endColour}"
 		if [ $extract -eq 1 ]; then
 			echo -ne "\n${turquoiseColour}Extracting information${endColour}${grayColour}...${endColour}"
-			cp ut.tmp infoOutIP.txt
+			cp ut.tmp infoOutIP 2>/dev/null
 			if [ $(echo $?) -eq 0 ]; then
 				sleep 1; echo -e "${grayColour}[${endColour}${greenColour}V${endColour}${grayColour}]${endColour}"
-				echo -ne "\n${turquoiseColour}File name: ${endColour}${yellowColour} infoOutIP.txt${endColour}:"
+				echo -ne "\n${turquoiseColour}File name: ${endColour}${yellowColour} infoOutIP${endColour}:"
 			else
 				sleep 1; echo -e "${grayColour}[${endColour}${redColour}X${endColour}${grayColour}]${endColour}"
 				echo -ne "\n${redColour}We cant extract the file, try again.${endColour}"
